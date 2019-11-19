@@ -1,0 +1,46 @@
+#include <iostream>
+#include <string>
+#include <cmath>
+using namespace std;
+
+#ifndef polynomial_h
+#define polynomial_h
+
+const int tms = 65535;
+
+struct term
+{
+  int coef;
+  string var;
+  int pow;
+};
+
+int T[tms];
+const int f = 1;
+term tn[tms][f];
+  
+class polynomial
+{
+ public:
+  polynomial();
+  polynomial(term[tms][f]);
+  void getpol(term[tms][f]);
+  double eval();
+  void simpsort();             //should (and some times must) be called before other functions
+  void add(term[tms][f]);
+  void sub(term[tms][f]);
+  void pmult(term[tms][f]);
+  void imult(term[tms][f]);
+  void rdeg(term[tms][f]);
+  void eql(term[tms][f]);
+  void gdeg(term[tms][f]);
+  void gcoef(term[tms][f]);
+  void printp(term[tms][f]);
+
+  ~polynomial();
+
+ private:
+  term t[tms][f], xt[tms][f];
+};
+
+#endif

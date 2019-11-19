@@ -1,0 +1,64 @@
+#include "main.h"
+#include <iostream>
+using namespace std;
+
+int main();
+{
+  
+}
+
+bool rational::ratnl(int n, int hn)
+{
+  for (int = 0; i <= hn; i++)
+    {
+      if ((n % i) == 0)
+	return 1;
+    }
+}
+
+int rational::add(int n1, int n2)
+{
+  return n1 + n2;
+}
+
+int rational::subrtact(int n1, int n2)
+{
+  return n1 - n2;
+}
+
+int rational::multiply(int n1, int n2)
+{
+  return n1*n2;
+}
+
+int rational::divide(int n1, int n2)
+{
+  return n1/n2;
+}
+
+bool rational::equal(int n1, int n2)
+{
+  if (n1 == n2)
+    return 1;
+  else
+    return 0;
+}
+
+bool rational::less(int n1, int n2)
+{
+  if (n1 < n2)
+    return 1;
+  else
+    return 0;
+}
+
+void rational::getcomponents(int n1, int hn, int numer, int deener)
+{
+    for (int = hn; i > 1; i--)
+    {
+      if ((n % i) == 0)
+	{
+	  deener = i;
+	  numer = n / i;
+	}
+    }
