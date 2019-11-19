@@ -1,0 +1,5 @@
+Is the data sorted? (yes or no) 	  	 			no		yes
+How many comparisons are made to find the first item (index 0)? 	1  	 	6
+How many comparisons are made to find the middle item (index 49)? 	50  	 	1
+How many comparisons are made to find the last item (index 99)? 	100 	 	7
+									seqSearch	Binary

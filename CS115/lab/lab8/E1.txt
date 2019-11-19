@@ -1,0 +1,13 @@
+Class Access specifier 	Base Class Member Access Level 	Derived Class Member Access Level
+public 	     			private	  	 	-
+				public			public
+				protected 		protected
+
+protected 			private			-
+				public			protected
+				protected 		protected
+
+private		 		private			-
+				public			private
+				protected 		private
+

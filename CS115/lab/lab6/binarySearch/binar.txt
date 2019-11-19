@@ -1,0 +1,20 @@
+// Code for BinarySearch
+int BinarySearch(IntArrayType IntArray, int Low, int High, int Target)
+{
+   int Mid, Difference;
+
+   while (Low <= High)
+   {
+      Mid = (Low + High) / 2;
+      Difference = IntArray[Mid] - Target;
+
+      if (Difference == 0)         // IntArray[Mid] == Target
+         return Mid;
+      else if (Difference < 0)     // IntArray[Mid] < Target
+         Low = Mid + 1;
+      else
+         High = Mid - 1;
+   }
+
+   return -1;   // If reach here, Target was not found.
+}
