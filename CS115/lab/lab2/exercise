@@ -1,0 +1,76 @@
+#include "exercise.h"
+#include <iostream>
+#include <fstream>
+#include <string>
+
+using namespace std;
+
+const row = 4;
+const column = 5;
+
+void sumArray(int mtrx1[row][column], int mtrx2[row][column], fmtrx[row][column]&);
+
+void readArray(int mtrx[row][column]&, string);
+
+void printArray(int fmtrx[row][column]);
+
+int main()
+{
+	int mtrx1[row][column];
+	int mtrx2[row][column];
+	int fmtrx[row][column];
+	string arry1, arry2;
+
+	cout << "Please enter the name of the file containing data for Array 1: " << endl;
+	cin << arry1i;
+
+	cout << "Please enter the name of the file containing data for Array 2: " << endl;
+	cin >> arry2i;
+
+	ifstream arry1;
+	ifstream arry2;
+
+	arry1.open(arry1i);
+	arry2.open(arry2i);
+
+
+
+	cout << "The sum is: " << endl;
+
+	for(int i = 0; i < row; i++)
+	{
+		for(int n = 0; n < column; n++)
+			cout << fmtrx[i][n] << ' ';
+		cout << endl;
+	}
+
+	return 0;
+}
+
+void sumArray(int mtrx1[row][column], int mtrx2[row][column])
+{
+	int fmtrx[row][column];
+
+	for(int i = 0; i < row; i++)
+	{
+		for (int c = 0; n < column; n++)
+		fmtrx[i][n] = mtrx1[i][n] + mtrx1[i][n];
+	}
+}
+
+void printArray(int fmtrx[row][column])
+{
+	cout << "The sum is: " << endl;
+
+	for(int i = 0; i < row; i++)
+	{
+		for(int n = 0; n < column; n++)
+
+cout << fmtrx[i][n] << ' ';
+		cout << endl;
+	}
+}
+
+void readArray(int mtrx[row][column])
+{
+	

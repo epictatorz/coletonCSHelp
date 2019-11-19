@@ -1,0 +1,36 @@
+#include <iostream>
+
+using namespace std;
+
+class Date{
+   private:
+      double month;   // Length of a box
+      double day;  // Breadth of a box
+      double year;   // Height of a box
+};
+
+int main() {
+   Date Date;        // Declare Box1 of type Box
+   Date Date2;        // Declare Box2 of type Box
+   double volume = 0.0;     // Store the volume of a box here
+   printData();
+   
+   // box 1 specification
+   Date1.year = 5.0; 
+   Date1.month = 6.0; 
+   date1.breadth = 7.0;
+
+   // box 2 specification
+   Date2.year = 10.0;
+   Date2.month = 12.0;
+   Date2.day = 13.0;
+   
+   // volume of box 1
+   volume = Date1.year * Date1.month * Date1.day;
+   cout << "Volume of Box1 : " << volume <<endl;
+
+   // volume of box 2
+   volume = Box2.year * Box2.month * Box2.day;
+   cout << "Volume of Box2 : " << volume <<endl;
+   return 0;
+}
